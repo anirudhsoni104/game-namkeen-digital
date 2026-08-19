@@ -22,7 +22,7 @@ export const Route = createFileRoute("/checkout")({
     ],
     links: [{ rel: "canonical", href: "/checkout" }],
   }),
-  component: Checkout;
+  component: Checkout,
 });
 
 const schema = z.object({
