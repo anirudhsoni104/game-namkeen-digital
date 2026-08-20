@@ -24,7 +24,7 @@ export const Route = createFileRoute("/catalogue")({
     ],
     links: [{ rel: "canonical", href: "/catalogue" }],
   }),
-  component: Catalogue;
+  component: Catalogue,
 });
 
 function Catalogue() {
