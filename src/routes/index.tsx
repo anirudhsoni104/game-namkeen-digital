@@ -185,7 +185,7 @@ function Home() {
         <h2 className="text-center text-4xl sm:text-5xl">Why Choose Game Namkeen</h2>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
           {brand.strengths.map((s, i) => {
-            const Icon = strengthIcons[i];
+            const Icon = strengthIcons[i] ?? BadgeCheck;
             return (
               <div
                 key={s}
