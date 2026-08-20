@@ -105,7 +105,7 @@ function Checkout() {
             <div className="sm:col-span-2">
               <Label htmlFor="address">Delivery address</Label>
               <Textarea id="address" name="address" rows={3} className="mt-1.5" required />
-              {errors.address && <p className="mt-1 text-xs text-destructive">{errors.address}</p>}
+              {errors['address'] && <p className="mt-1 text-xs text-destructive">{errors['address']}</p>}
             </div>
             {field("city", "City", { autoComplete: "address-level2", required: true })}
             {field("state", "State", { autoComplete: "address-level1", required: true })}

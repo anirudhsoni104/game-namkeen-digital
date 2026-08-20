@@ -121,22 +121,22 @@ function Contact() {
             <div>
               <Label htmlFor="name">Name</Label>
               <Input id="name" name="name" className="mt-1.5" autoComplete="name" required />
-              {errors.name && <p className="mt-1 text-xs text-destructive">{errors.name}</p>}
+              {errors['name'] && <p className="mt-1 text-xs text-destructive">{errors['name']}</p>}
             </div>
             <div>
               <Label htmlFor="phone">Phone</Label>
               <Input id="phone" name="phone" className="mt-1.5" inputMode="numeric" autoComplete="tel" required />
-              {errors.phone && <p className="mt-1 text-xs text-destructive">{errors.phone}</p>}
+              {errors['phone'] && <p className="mt-1 text-xs text-destructive">{errors['phone']}</p>}
             </div>
             <div className="sm:col-span-2">
               <Label htmlFor="email">Email (optional)</Label>
               <Input id="email" name="email" type="email" className="mt-1.5" autoComplete="email" />
-              {errors.email && <p className="mt-1 text-xs text-destructive">{errors.email}</p>}
+              {errors['email'] && <p className="mt-1 text-xs text-destructive">{errors['email']}</p>}
             </div>
             <div className="sm:col-span-2">
               <Label htmlFor="message">Message</Label>
               <Textarea id="message" name="message" rows={5} className="mt-1.5" required />
-              {errors.message && <p className="mt-1 text-xs text-destructive">{errors.message}</p>}
+              {errors['message'] && <p className="mt-1 text-xs text-destructive">{errors['message']}</p>}
             </div>
           </div>
           <Button type="submit" size="lg" className="mt-6 w-full sm:w-auto">
