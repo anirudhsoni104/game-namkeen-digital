@@ -30,7 +30,7 @@ export function Nav() {
             alt="Game Namkeen logo"
             width={132}
             height={76}
-            className="h-10 w-auto"
+            className="h-12 w-auto"
           />
           <span className="sr-only">Game Namkeen</span>
         </Link>
