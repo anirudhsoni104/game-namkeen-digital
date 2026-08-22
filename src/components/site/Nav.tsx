@@ -3,6 +3,8 @@ import { Link } from "@tanstack/react-router";
 import { Menu, Search, ShoppingCart, X } from "lucide-react";
 import { useCart } from "@/lib/cart";
 import { brand } from "@/lib/brand";
+import logoAsset from "@/assets/game-namkeen-logo.png.asset.json";
+
 
 const links = [
   { to: "/shop", label: "Shop" },
