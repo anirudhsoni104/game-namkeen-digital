@@ -3,6 +3,8 @@ import { Link } from "@tanstack/react-router";
 import { Menu, Search, ShoppingCart, X } from "lucide-react";
 import { useCart } from "@/lib/cart";
 import { brand } from "@/lib/brand";
+import logoAsset from "@/assets/game-namkeen-logo.png.asset.json";
+
 
 const links = [
   { to: "/shop", label: "Shop" },
@@ -23,11 +25,16 @@ export function Nav() {
         className="container-page flex items-center justify-between gap-4 py-3"
       >
         <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <span className="grid size-10 place-items-center rounded-full bg-primary text-[9px] font-black uppercase tracking-tight text-primary-foreground ring-4 ring-gold">
-            Game
-          </span>
-          <span className="font-display text-xl font-bold text-primary">Game Namkeen</span>
+          <img
+            src={logoAsset.url}
+            alt="Game Namkeen logo"
+            width={132}
+            height={76}
+            className="h-12 w-auto"
+          />
+          <span className="sr-only">Game Namkeen</span>
         </Link>
+
 
         <div className="hidden items-center gap-7 text-sm font-bold lg:flex">
           {links.map((l) => (
