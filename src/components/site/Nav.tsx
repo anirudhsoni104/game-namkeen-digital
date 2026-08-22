@@ -23,11 +23,16 @@ export function Nav() {
         className="container-page flex items-center justify-between gap-4 py-3"
       >
         <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <span className="grid size-10 place-items-center rounded-full bg-primary text-[9px] font-black uppercase tracking-tight text-primary-foreground ring-4 ring-gold">
-            Game
-          </span>
-          <span className="font-display text-xl font-bold text-primary">Game Namkeen</span>
+          <img
+            src={logoAsset.url}
+            alt="Game Namkeen logo"
+            width={132}
+            height={76}
+            className="h-10 w-auto"
+          />
+          <span className="sr-only">Game Namkeen</span>
         </Link>
+
 
         <div className="hidden items-center gap-7 text-sm font-bold lg:flex">
           {links.map((l) => (
