@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Phone } from "lucide-react";
 import { brand } from "@/lib/brand";
+import logoAsset from "@/assets/game-namkeen-logo.png.asset.json";
 
 export function Footer() {
   return (
@@ -8,11 +9,16 @@ export function Footer() {
       <div className="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-2.5">
-            <span className="grid size-10 place-items-center rounded-full bg-primary-foreground/10 text-[9px] font-black uppercase ring-2 ring-gold">
-              Game
-            </span>
-            <span className="font-display text-xl font-bold">Game Namkeen</span>
+            <img
+              src={logoAsset.url}
+              alt="Game Namkeen logo"
+              width={160}
+              height={92}
+              className="h-12 w-auto rounded-lg bg-primary-foreground/95 p-1"
+            />
+            <span className="sr-only">Game Namkeen</span>
           </div>
+
           <p className="mt-4 text-sm font-semibold uppercase tracking-[0.18em] text-gold">
             {brand.tagline}
           </p>
