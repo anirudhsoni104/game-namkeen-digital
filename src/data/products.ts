@@ -14,7 +14,7 @@ export type Product = {
 export const products: Product[] = [
   {
     "id": "pet-pouch-b",
-    "name": "Pet Pouch B",
+    "name": "Pet Pooja",
     "category": "₹5 Family Pack",
     "tag": "Family Pack",
     "price": 5,
@@ -110,7 +110,7 @@ export const products: Product[] = [
   },
   {
     "id": "dal-makhni",
-    "name": "Dal Makhni",
+    "name": "Dal Bhaat",
     "category": "₹5 Family Pack",
     "tag": "Family Pack",
     "price": 5,
@@ -142,7 +142,7 @@ export const products: Product[] = [
   },
   {
     "id": "tasty-fry-masala",
-    "name": "Tasty Fry Masala",
+    "name": "Mirchi Bhajiya",
     "category": "₹5 Family Pack",
     "tag": "Family Pack",
     "price": 5,
@@ -174,7 +174,7 @@ export const products: Product[] = [
   },
   {
     "id": "makeup-box",
-    "name": "Makeup Box",
+    "name": "Makeup Jewellery Box",
     "category": "₹5 Toys & Fun",
     "tag": "Fun Pack",
     "price": 5,
@@ -238,7 +238,7 @@ export const products: Product[] = [
   },
   {
     "id": "jelly-masti",
-    "name": "Jelly Masti",
+    "name": "Jelly Maza",
     "category": "₹5 Toys & Fun",
     "tag": "Fun Pack",
     "price": 5,
@@ -254,7 +254,7 @@ export const products: Product[] = [
   },
   {
     "id": "chilli-bhujia",
-    "name": "Chilli Bhujia",
+    "name": "Bhootiya Chilli",
     "category": "Premium ₹5 Snacks",
     "tag": "Premium",
     "price": null,
@@ -262,7 +262,7 @@ export const products: Product[] = [
   },
   {
     "id": "hal-muri",
-    "name": "Hal Muri",
+    "name": "Jhal Muri",
     "category": "Premium ₹5 Snacks",
     "tag": "Premium",
     "price": null,
@@ -278,7 +278,7 @@ export const products: Product[] = [
   },
   {
     "id": "dal-ratani",
-    "name": "Dal Ratani",
+    "name": "Dal Makhani",
     "category": "₹2 MRP Items",
     "tag": "₹2 Range",
     "price": 2,
@@ -318,7 +318,7 @@ export const products: Product[] = [
   },
   {
     "id": "wafer-stick",
-    "name": "Wafer Stick",
+    "name": "Star Gold Wafer",
     "category": "Wafers",
     "tag": "Wafers",
     "price": null,
@@ -406,7 +406,7 @@ export const products: Product[] = [
   },
   {
     "id": "nargri-sev",
-    "name": "Nargri Sev",
+    "name": "Narangi Sev",
     "category": "₹5 Namkeens",
     "tag": "₹5 Namkeen",
     "price": 5,
@@ -470,7 +470,7 @@ export const products: Product[] = [
   },
   {
     "id": "nayalon-saloni",
-    "name": "Nayalon Saloni",
+    "name": "Nylon Saloni",
     "category": "₹5 Namkeens",
     "tag": "₹5 Namkeen",
     "price": 5,
@@ -478,7 +478,7 @@ export const products: Product[] = [
   },
   {
     "id": "bhujia-falsa",
-    "name": "Bhujia Falsa",
+    "name": "Bhajiya Phalli",
     "category": "₹5 Namkeens",
     "tag": "₹5 Namkeen",
     "price": 5,
@@ -542,7 +542,7 @@ export const products: Product[] = [
   },
   {
     "id": "nayalon-saloni-2",
-    "name": "Nayalon Saloni",
+    "name": "Nylon Saloni",
     "category": "₹2 Pocket Packs",
     "tag": "₹2 Pocket",
     "price": 2,
@@ -550,7 +550,7 @@ export const products: Product[] = [
   },
   {
     "id": "gathakatori",
-    "name": "Gathakatori",
+    "name": "Gangakaveri",
     "category": "500g & 1kg Namkeen",
     "tag": "Large Pack",
     "price": null,
