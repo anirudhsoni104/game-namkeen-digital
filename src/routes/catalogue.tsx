@@ -83,7 +83,7 @@ function Catalogue() {
                 }}
                 className="rounded-full border border-border bg-card px-3 py-1.5 text-sm font-semibold hover:bg-accent"
               >
-                {m.name} · page {m.cataloguePage}
+                {m.name} · page {pages.indexOf(m.cataloguePage) + 1}
               </button>
             </li>
           ))}
@@ -161,11 +161,7 @@ function Catalogue() {
           ))}
         </div>
 
-        <p className="mt-6 text-xs text-muted-foreground">
-          Scanned catalogue page images and the original PDF were not included in the supplied
-          material. Once provided, each page will render as a zoomable scan alongside these product
-          tiles.
-        </p>
+        
       </section>
     </div>
   );
