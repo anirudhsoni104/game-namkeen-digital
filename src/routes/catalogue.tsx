@@ -109,9 +109,9 @@ function Catalogue() {
       <section className="mt-8 rounded-3xl border border-border bg-card p-6 shadow-card">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <h2 className="text-2xl">
-            Catalogue page {page}
+            Page {pageIndex + 1}
             <span className="ml-2 text-sm font-semibold text-muted-foreground">
-              ({pageIndex + 1} of {pages.length})
+              of {pages.length} · {pageProducts[0]?.category}
             </span>
           </h2>
           <div className="flex gap-2">
