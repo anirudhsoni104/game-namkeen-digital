@@ -23,6 +23,7 @@ export const productImages: Record<string, string> = {
   "makeup-box": "/__l5e/assets-v1/040094f3-69b4-42eb-91eb-fb3b15925d31/makeup-box.png",
   "balloon-pasta": "/__l5e/assets-v1/0db51efe-2d18-468c-acd7-970f5c3a6fca/balloon-pasta.png",
   "mota-wheels": "/__l5e/assets-v1/765409c1-9aed-4b58-948a-d25b1c814692/mota-wheels.png",
+  "mota-wheels-2": "/__l5e/assets-v1/765409c1-9aed-4b58-948a-d25b1c814692/mota-wheels.png",
   "laser-light": "/__l5e/assets-v1/b781fddd-bf00-4d71-8565-65bf88eaa7a2/laser-light.png",
   "racing-car": "/__l5e/assets-v1/5d0fc8e7-2097-4bba-b960-a09209890627/racing-car.png",
   "masala-puchka": "/__l5e/assets-v1/876c7dd8-4898-4a9c-b4c9-c41f336572c0/masala-puchka.png",

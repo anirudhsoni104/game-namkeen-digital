@@ -62,8 +62,8 @@ function Catalogue() {
             className="h-12 rounded-xl pl-12"
           />
         </div>
-        <Button variant="outline" disabled title="Original catalogue PDF not supplied yet">
-          Download PDF (pending)
+        <Button asChild variant="outline">
+          <Link to="/shop">Browse full shop</Link>
         </Button>
       </div>
 
@@ -83,7 +83,7 @@ function Catalogue() {
                 }}
                 className="rounded-full border border-border bg-card px-3 py-1.5 text-sm font-semibold hover:bg-accent"
               >
-                {m.name} · page {m.cataloguePage}
+                {m.name} · page {pages.indexOf(m.cataloguePage) + 1}
               </button>
             </li>
           ))}
@@ -109,9 +109,9 @@ function Catalogue() {
       <section className="mt-8 rounded-3xl border border-border bg-card p-6 shadow-card">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <h2 className="text-2xl">
-            Catalogue page {page}
+            Page {pageIndex + 1}
             <span className="ml-2 text-sm font-semibold text-muted-foreground">
-              ({pageIndex + 1} of {pages.length})
+              of {pages.length} · {pageProducts[0]?.category}
             </span>
           </h2>
           <div className="flex gap-2">
@@ -161,11 +161,7 @@ function Catalogue() {
           ))}
         </div>
 
-        <p className="mt-6 text-xs text-muted-foreground">
-          Scanned catalogue page images and the original PDF were not included in the supplied
-          material. Once provided, each page will render as a zoomable scan alongside these product
-          tiles.
-        </p>
+        
       </section>
     </div>
   );
