@@ -62,8 +62,8 @@ function Catalogue() {
             className="h-12 rounded-xl pl-12"
           />
         </div>
-        <Button variant="outline" disabled title="Original catalogue PDF not supplied yet">
-          Download PDF (pending)
+        <Button asChild variant="outline">
+          <Link to="/shop">Browse full shop</Link>
         </Button>
       </div>
 
