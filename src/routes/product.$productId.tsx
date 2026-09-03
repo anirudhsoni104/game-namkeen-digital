@@ -116,7 +116,7 @@ function ProductPage() {
             </Button>
           </div>
           <p className="mt-3 text-sm text-muted-foreground">
-            This website is an product showcase only — products are not sold online. Contact us for
+            This website is a product showcase only — products are not sold online. Contact us for
             stockist, distribution and trade enquiries.
           </p>
 
