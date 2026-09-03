@@ -1,13 +1,10 @@
-import { useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { toast } from "sonner";
-import { MessageCircle, Minus, Plus, ShoppingBag } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 import { getProduct, products } from "@/data/products";
 import { PackShot } from "@/components/site/PackShot";
 import { ProductCard } from "@/components/site/ProductCard";
 import { Button } from "@/components/ui/button";
-import { useCart } from "@/lib/cart";
-import { waLink } from "@/lib/brand";
+import { brand, waLink } from "@/lib/brand";
 
 export const Route = createFileRoute("/product/$productId")({
   loader: ({ params }) => {
@@ -63,8 +60,6 @@ export const Route = createFileRoute("/product/$productId")({
 
 function ProductPage() {
   const { product } = Route.useLoaderData();
-  const { add } = useCart();
-  const [qty, setQty] = useState(1);
 
   const related = products.filter((p) => p.category === product.category && p.id !== product.id).slice(0, 4);
 
@@ -89,10 +84,6 @@ function ProductPage() {
           <div className="aspect-square overflow-hidden rounded-3xl shadow-card">
             <PackShot product={product} />
           </div>
-          <p className="mt-3 text-xs text-muted-foreground">
-            Packaging photography for this product is pending — the original catalogue images were
-            not supplied with the source material.
-          </p>
         </div>
 
         <div>
@@ -109,51 +100,25 @@ function ProductPage() {
           )}
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <div className="flex items-center rounded-full border border-border">
-              <button
-                type="button"
-                aria-label="Decrease quantity"
-                className="grid size-10 place-items-center rounded-full hover:bg-accent"
-                onClick={() => setQty((q) => Math.max(1, q - 1))}
-              >
-                <Minus className="size-4" />
-              </button>
-              <span className="w-10 text-center font-bold" aria-live="polite">
-                {qty}
-              </span>
-              <button
-                type="button"
-                aria-label="Increase quantity"
-                className="grid size-10 place-items-center rounded-full hover:bg-accent"
-                onClick={() => setQty((q) => q + 1)}
-              >
-                <Plus className="size-4" />
-              </button>
-            </div>
-            <Button
-              size="lg"
-              onClick={() => {
-                add(product.id, qty);
-                toast.success(`${product.name} × ${qty} added to cart`);
-              }}
-            >
-              <ShoppingBag className="size-4" /> Add to Cart
-            </Button>
-            <Button asChild size="lg" variant="gold">
-              <Link to="/checkout" onClick={() => add(product.id, qty)}>
-                Buy Now
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline">
+            <Button asChild size="lg">
               <a
-                href={waLink(`Hi, I am interested in ${product.name}. Please share more details.`)}
+                href={waLink(`Hi Game Namkeen, I would like details about ${product.name}.`)}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MessageCircle className="size-4" /> WhatsApp Enquiry
+                <MessageCircle className="size-4" /> Enquire on WhatsApp
+              </a>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <a href={`tel:${brand.phoneTel}`}>
+                <Phone className="size-4" /> Call {brand.phoneDisplay}
               </a>
             </Button>
           </div>
+          <p className="mt-3 text-sm text-muted-foreground">
+            This website is an product showcase only — products are not sold online. Contact us for
+            stockist, distribution and trade enquiries.
+          </p>
 
           <dl className="mt-10 divide-y divide-border rounded-2xl border border-border bg-card">
             <div className="flex justify-between p-4 text-sm">

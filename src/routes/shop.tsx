@@ -15,13 +15,13 @@ export const Route = createFileRoute("/shop")({
   }),
   head: () => ({
     meta: [
-      { title: "Shop All Products — Game Namkeen" },
+      { title: "All Products — Game Namkeen" },
       {
         name: "description",
         content:
-          "Browse all Game Namkeen products: ₹2 pocket packs, ₹5 namkeens, family packs, premium namkeens, wafers and chips. Search, filter and add to cart.",
+          "Browse all Game Namkeen products: ₹2 pocket packs, ₹5 namkeens, family packs, premium namkeens, wafers and chips. Search and filter the complete range.",
       },
-      { property: "og:title", content: "Shop All Products — Game Namkeen" },
+      { property: "og:title", content: "All Products — Game Namkeen" },
       {
         property: "og:description",
         content: "Search and filter the complete Game Namkeen snack range.",
@@ -81,7 +81,7 @@ function Shop() {
   return (
     <div className="container-page py-10">
       <header>
-        <h1 className="text-4xl sm:text-5xl">Shop All Products</h1>
+        <h1 className="text-4xl sm:text-5xl">All Products</h1>
         <p className="mt-3 max-w-2xl text-muted-foreground">
           The complete Game Namkeen range from the product catalogue. Prices shown are the catalogue
           MRP where stated.

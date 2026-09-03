@@ -69,7 +69,7 @@ function Contact() {
       <header className="max-w-2xl">
         <h1 className="text-5xl sm:text-6xl">Contact Us</h1>
         <p className="mt-4 text-muted-foreground">
-          Questions about products, orders or stocking Game Namkeen? Reach the team directly.
+          Questions about our products or stocking Game Namkeen? Reach the team directly.
         </p>
       </header>
 

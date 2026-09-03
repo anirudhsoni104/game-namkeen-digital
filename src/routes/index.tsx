@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Shop the Game Namkeen range — ₹2 pocket packs, ₹5 namkeens, family packs, premium namkeens, wafers and chips. Trust. Taste. Tradition.",
+          "Explore the Game Namkeen range — ₹2 pocket packs, ₹5 namkeens, family packs, premium namkeens, wafers and chips. Trust. Taste. Tradition.",
       },
       { property: "og:title", content: "Game Namkeen | Trust. Taste. Tradition." },
       {
@@ -64,13 +64,13 @@ function Home() {
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/85">
               Explore the Game Namkeen range — from ₹2 pocket packs and ₹5 favourites to premium
-              namkeens, wafers, chips and family packs. Browse the full catalogue and shop your
-              favourite snacks online.
+              namkeens, wafers, chips and family packs. Browse the full catalogue and get in touch
+              for stockist and distribution enquiries.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg" variant="gold">
                 <Link to="/shop">
-                  Shop Products <ArrowRight className="size-4" />
+                  View Products <ArrowRight className="size-4" />
                 </Link>
               </Button>
               <Button asChild size="lg" variant="onDark">
@@ -126,7 +126,7 @@ function Home() {
 
       <section className="container-page py-16">
         <div className="flex flex-wrap items-end justify-between gap-4">
-          <h2 className="text-4xl sm:text-5xl">Shop by Range</h2>
+          <h2 className="text-4xl sm:text-5xl">Browse by Range</h2>
           <p className="max-w-lg text-muted-foreground">
             Ten ranges from the Game Namkeen catalogue — everyday snacks, family packs and premium
             namkeens.
