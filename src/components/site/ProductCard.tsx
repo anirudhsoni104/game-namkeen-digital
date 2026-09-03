@@ -1,14 +1,11 @@
 import { Link } from "@tanstack/react-router";
-import { toast } from "sonner";
-import { ShoppingBag } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import type { Product } from "@/data/products";
 import { PackShot } from "./PackShot";
-import { useCart } from "@/lib/cart";
+import { waLink } from "@/lib/brand";
 import { Button } from "@/components/ui/button";
 
 export function ProductCard({ product, index = 0 }: { product: Product; index?: number }) {
-  const { add } = useCart();
-
   return (
     <article
       className="group reveal flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
@@ -24,7 +21,7 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
         </div>
         {product.price != null && (
           <span className="absolute right-3 top-3 rounded-full bg-gold px-3 py-1 text-xs font-extrabold text-gold-foreground shadow-card">
-            ₹{product.price}
+            MRP ₹{product.price}
           </span>
         )}
       </Link>
@@ -42,19 +39,18 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
           </Link>
         </h3>
         <div className="mt-4 flex items-center gap-2">
-          <Button
-            size="sm"
-            className="flex-1"
-            onClick={() => {
-              add(product.id);
-              toast.success(`${product.name} added to cart`);
-            }}
-          >
-            <ShoppingBag className="size-4" /> Add to Cart
+          <Button asChild size="sm" className="flex-1">
+            <a
+              href={waLink(`Hi Game Namkeen, I would like details about ${product.name}.`)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle className="size-4" /> Enquire
+            </a>
           </Button>
           <Button asChild size="sm" variant="outline">
             <Link to="/product/$productId" params={{ productId: product.id }}>
-              View
+              Details
             </Link>
           </Button>
         </div>

@@ -11,7 +11,6 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { CartProvider } from "@/lib/cart";
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFab } from "@/components/site/WhatsAppFab";
@@ -86,7 +85,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Game Namkeen — Indian namkeens, wafers, chips and family packs. Explore the range, shop online and enquire about wholesale distribution.",
+          "Game Namkeen — Indian namkeens, wafers, chips and family packs. Explore the full product range and enquire about wholesale distribution.",
       },
       { property: "og:site_name", content: "Game Namkeen" },
       { property: "og:type", content: "website" },
@@ -110,7 +109,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "Organization",
           name: "Game Namkeen",
           slogan: "Trust. Taste. Tradition.",
-          telephone: "+919131959804",
+          telephone: "+917000650300",
           sameAs: ["https://www.instagram.com/game.namkeens/"],
           address: {
             "@type": "PostalAddress",
@@ -148,8 +147,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <CartProvider>
-        <div className="flex min-h-screen flex-col">
+      <div className="flex min-h-screen flex-col">
           <Nav />
           <main className="flex-1">
             {/* Required: nested routes render here. */}
@@ -159,7 +157,6 @@ function RootComponent() {
         </div>
         <WhatsAppFab />
         <Toaster />
-      </CartProvider>
     </QueryClientProvider>
   );
 }

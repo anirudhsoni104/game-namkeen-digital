@@ -2,9 +2,9 @@
 export const brand = {
   name: "Game Namkeen",
   tagline: "Trust. Taste. Tradition.",
-  phoneDisplay: "09131959804",
-  phoneTel: "+919131959804",
-  whatsapp: "919131959804",
+  phoneDisplay: "+91 70006 50300",
+  phoneTel: "+917000650300",
+  whatsapp: "917000650300",
   instagram: "https://www.instagram.com/game.namkeens/",
   instagramHandle: "@game.namkeens",
   units: [

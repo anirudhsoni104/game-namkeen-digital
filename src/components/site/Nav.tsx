@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, Search, ShoppingCart, X } from "lucide-react";
-import { useCart } from "@/lib/cart";
+import { Menu, Phone, Search, X } from "lucide-react";
 import { brand } from "@/lib/brand";
 import logoAsset from "@/assets/game-namkeen-logo.png.asset.json";
 
 
 const links = [
-  { to: "/shop", label: "Shop" },
+  { to: "/shop", label: "Products" },
   { to: "/catalogue", label: "Catalogue" },
   { to: "/about", label: "About" },
   { to: "/wholesale", label: "Wholesale" },
@@ -15,7 +14,6 @@ const links = [
 ] as const;
 
 export function Nav() {
-  const { count } = useCart();
   const [open, setOpen] = useState(false);
 
   return (
@@ -57,21 +55,13 @@ export function Nav() {
           >
             <Search className="size-5" />
           </Link>
-          <Link
-            to="/cart"
-            aria-label={`Cart, ${count} items`}
-            className="relative grid size-10 place-items-center rounded-full transition-colors hover:bg-accent"
+          <a
+            href={`tel:${brand.phoneTel}`}
+            aria-label={`Call ${brand.phoneDisplay}`}
+            className="grid size-10 place-items-center rounded-full transition-colors hover:bg-accent"
           >
-            <ShoppingCart className="size-5" />
-            {count > 0 && (
-              <span
-                key={count}
-                className="reveal absolute -right-0.5 -top-0.5 grid min-w-5 place-items-center rounded-full bg-primary px-1 text-[11px] font-bold text-primary-foreground"
-              >
-                {count}
-              </span>
-            )}
-          </Link>
+            <Phone className="size-5" />
+          </a>
           <button
             type="button"
             aria-label={open ? "Close menu" : "Open menu"}
