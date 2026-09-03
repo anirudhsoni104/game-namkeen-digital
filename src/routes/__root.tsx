@@ -110,7 +110,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "Organization",
           name: "Game Namkeen",
           slogan: "Trust. Taste. Tradition.",
-          telephone: "+919131959804",
+          telephone: "+917000650300",
           sameAs: ["https://www.instagram.com/game.namkeens/"],
           address: {
             "@type": "PostalAddress",

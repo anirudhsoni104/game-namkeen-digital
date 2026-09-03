@@ -16,7 +16,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Contact Game Namkeen: Sakhi Anandam Industries, Gram Malha, Durg 491107 and A.N. Products, Gram Umda Bhilai 3, Durg 490021. Call 09131959804.",
+          "Contact Game Namkeen: Sakhi Anandam Industries, Gram Malha, Durg 491107 and A.N. Products, Gram Umda Bhilai 3, Durg 490021. Call +91 70006 50300.",
       },
       { property: "og:title", content: "Contact Game Namkeen" },
       {
