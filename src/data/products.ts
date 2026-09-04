@@ -1,6 +1,5 @@
-// Product data extracted from the supplied Game Namkeen catalogue website.
-// Only fields present in the source material are populated. `price` is the
-// catalogue MRP in INR; null means no price was stated in the source.
+// Product data extracted from the official Game Namkeen catalogue PDF (pages 2-19).
+// `price` is the catalogue MRP in INR; null means no price is stated in the catalogue.
 
 export type Product = {
   id: string;
@@ -13,8 +12,8 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    "id": "pet-pouch-b",
-    "name": "Pet Pooja",
+    "id": "pet-pooja-fryums",
+    "name": "Pet Pooja Fryums",
     "category": "₹5 Family Pack",
     "tag": "Family Pack",
     "price": 5,
@@ -109,7 +108,7 @@ export const products: Product[] = [
     "cataloguePage": 3
   },
   {
-    "id": "dal-makhni",
+    "id": "dal-bhaat",
     "name": "Dal Bhaat",
     "category": "₹5 Family Pack",
     "tag": "Family Pack",
@@ -117,8 +116,24 @@ export const products: Product[] = [
     "cataloguePage": 3
   },
   {
-    "id": "paneer-bhaji",
-    "name": "Paneer Bhaji",
+    "id": "pav-bhaji",
+    "name": "Mumbai Pav Bhaji",
+    "category": "₹5 Family Pack",
+    "tag": "Family Pack",
+    "price": 5,
+    "cataloguePage": 3
+  },
+  {
+    "id": "pet-pooja-tasty-puff",
+    "name": "Pet Pooja Tasty Puff",
+    "category": "₹5 Family Pack",
+    "tag": "Family Pack",
+    "price": 5,
+    "cataloguePage": 3
+  },
+  {
+    "id": "family-dhaba",
+    "name": "Family Dhaba",
     "category": "₹5 Family Pack",
     "tag": "Family Pack",
     "price": 5,
@@ -141,7 +156,7 @@ export const products: Product[] = [
     "cataloguePage": 4
   },
   {
-    "id": "tasty-fry-masala",
+    "id": "mirchi-bhajiya",
     "name": "Mirchi Bhajiya",
     "category": "₹5 Family Pack",
     "tag": "Family Pack",
@@ -173,9 +188,33 @@ export const products: Product[] = [
     "cataloguePage": 4
   },
   {
-    "id": "makeup-box",
-    "name": "Makeup Jewellery Box",
-    "category": "₹5 Toys & Fun",
+    "id": "pet-pooja-tasty-puff-5",
+    "name": "Pet Pooja Tasty Puff (Big Pack)",
+    "category": "₹5 Family Pack",
+    "tag": "Family Pack",
+    "price": 5,
+    "cataloguePage": 4
+  },
+  {
+    "id": "babaji-ka-thullu",
+    "name": "Babaji Ka Thullu",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 5
+  },
+  {
+    "id": "ketchup-katori",
+    "name": "Ketchup Katori",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 5
+  },
+  {
+    "id": "makeup-jewellery-box",
+    "name": "MakeUp Jewellery Box",
+    "category": "₹5 Toys & Gifts",
     "tag": "Fun Pack",
     "price": 5,
     "cataloguePage": 5
@@ -183,7 +222,7 @@ export const products: Product[] = [
   {
     "id": "balloon-pasta",
     "name": "Balloon Pasta",
-    "category": "₹5 Toys & Fun",
+    "category": "₹5 Toys & Gifts",
     "tag": "Fun Pack",
     "price": 5,
     "cataloguePage": 5
@@ -191,7 +230,7 @@ export const products: Product[] = [
   {
     "id": "mota-wheels",
     "name": "Mota Wheels",
-    "category": "₹5 Toys & Fun",
+    "category": "₹5 Toys & Gifts",
     "tag": "Fun Pack",
     "price": 5,
     "cataloguePage": 5
@@ -199,15 +238,103 @@ export const products: Product[] = [
   {
     "id": "laser-light",
     "name": "Laser Light",
-    "category": "₹5 Toys & Fun",
+    "category": "₹5 Toys & Gifts",
     "tag": "Fun Pack",
     "price": 5,
     "cataloguePage": 5
   },
   {
+    "id": "light-wala",
+    "name": "Light Wala",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 5
+  },
+  {
+    "id": "rocket-balloon",
+    "name": "Rocket Balloon",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 5
+  },
+  {
+    "id": "patakha-candy",
+    "name": "Patakha Candy",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 6
+  },
+  {
+    "id": "biskute-biscuit",
+    "name": "Biskute Biscuit",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 6
+  },
+  {
+    "id": "bhaura-baati",
+    "name": "Bhaura Baati",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 6
+  },
+  {
+    "id": "samosa-chatni",
+    "name": "Samosa Chatni",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 6
+  },
+  {
+    "id": "jo-dikhta-hai-wo-bikta-hai",
+    "name": "Jo Dikhta Hai Wo Bikta Hai",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 6
+  },
+  {
+    "id": "kaka-ka-khazana",
+    "name": "Kaka Ka Khazana",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 6
+  },
+  {
+    "id": "lucky-biryani",
+    "name": "Lucky Biryani",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 6
+  },
+  {
+    "id": "main-jhukega-nahi",
+    "name": "Main Jhukega Nahi",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 6
+  },
+  {
+    "id": "jodo-todo",
+    "name": "Jodo Todo",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 7
+  },
+  {
     "id": "racing-car",
     "name": "Racing Car",
-    "category": "₹5 Toys & Fun",
+    "category": "₹5 Toys & Gifts",
     "tag": "Fun Pack",
     "price": 5,
     "cataloguePage": 7
@@ -215,7 +342,7 @@ export const products: Product[] = [
   {
     "id": "masala-puchka",
     "name": "Masala Puchka",
-    "category": "₹5 Toys & Fun",
+    "category": "₹5 Toys & Gifts",
     "tag": "Fun Pack",
     "price": 5,
     "cataloguePage": 7
@@ -223,7 +350,23 @@ export const products: Product[] = [
   {
     "id": "smile-please",
     "name": "Smile Please",
-    "category": "₹5 Toys & Fun",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 7
+  },
+  {
+    "id": "bhancha-ghadi",
+    "name": "Bhancha Ghadi",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 7
+  },
+  {
+    "id": "patang",
+    "name": "Patang",
+    "category": "₹5 Toys & Gifts",
     "tag": "Fun Pack",
     "price": 5,
     "cataloguePage": 7
@@ -231,15 +374,71 @@ export const products: Product[] = [
   {
     "id": "dancing-ball",
     "name": "Dancing Ball",
-    "category": "₹5 Toys & Fun",
+    "category": "₹5 Toys & Gifts",
     "tag": "Fun Pack",
     "price": 5,
     "cataloguePage": 7
   },
   {
-    "id": "jelly-masti",
+    "id": "boom-fataka",
+    "name": "Boom Fataka",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 7
+  },
+  {
+    "id": "panipuri",
+    "name": "Panipuri",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 8
+  },
+  {
+    "id": "batman-ka-bhai-superman",
+    "name": "Batman Ka Bhai Superman",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 8
+  },
+  {
+    "id": "khajana-hi-khajana",
+    "name": "Khajana Hi Khajana",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 8
+  },
+  {
+    "id": "kefuram",
+    "name": "Kefuram",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 8
+  },
+  {
+    "id": "loot-machi-hai",
+    "name": "Loot Machi Hai",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 8
+  },
+  {
+    "id": "lucky-ipl",
+    "name": "Lucky IPL",
+    "category": "₹5 Toys & Gifts",
+    "tag": "Fun Pack",
+    "price": 5,
+    "cataloguePage": 8
+  },
+  {
+    "id": "jelly-maza",
     "name": "Jelly Maza",
-    "category": "₹5 Toys & Fun",
+    "category": "₹5 Toys & Gifts",
     "tag": "Fun Pack",
     "price": 5,
     "cataloguePage": 8
@@ -249,35 +448,35 @@ export const products: Product[] = [
     "name": "Masala Bhel",
     "category": "Premium ₹5 Snacks",
     "tag": "Premium",
-    "price": null,
+    "price": 5,
     "cataloguePage": 9
   },
   {
-    "id": "chilli-bhujia",
-    "name": "Bhootiya Chilli",
+    "id": "chhattisgarhi-chana-murra",
+    "name": "Chhattisgarhi Chana Murra",
     "category": "Premium ₹5 Snacks",
     "tag": "Premium",
-    "price": null,
+    "price": 5,
     "cataloguePage": 9
   },
   {
-    "id": "hal-muri",
+    "id": "jhal-muri",
     "name": "Jhal Muri",
     "category": "Premium ₹5 Snacks",
     "tag": "Premium",
-    "price": null,
+    "price": 5,
     "cataloguePage": 9
   },
   {
-    "id": "bhujia-chilli",
-    "name": "Bhujia Chilli",
+    "id": "bhootiya-chilli",
+    "name": "Bhootiya Chilli",
     "category": "Premium ₹5 Snacks",
     "tag": "Premium",
-    "price": null,
+    "price": 5,
     "cataloguePage": 9
   },
   {
-    "id": "dal-ratani",
+    "id": "dal-makhani",
     "name": "Dal Makhani",
     "category": "₹2 MRP Items",
     "tag": "₹2 Range",
@@ -285,7 +484,15 @@ export const products: Product[] = [
     "cataloguePage": 10
   },
   {
-    "id": "sev-samosa-2",
+    "id": "bajirao",
+    "name": "Bajirao",
+    "category": "₹2 MRP Items",
+    "tag": "₹2 Range",
+    "price": 2,
+    "cataloguePage": 10
+  },
+  {
+    "id": "sev-and-samosa",
     "name": "Sev & Samosa",
     "category": "₹2 MRP Items",
     "tag": "₹2 Range",
@@ -293,16 +500,40 @@ export const products: Product[] = [
     "cataloguePage": 10
   },
   {
-    "id": "mota-wheels-2",
-    "name": "Mota Wheels",
+    "id": "motu-patlu",
+    "name": "Motu Patlu",
     "category": "₹2 MRP Items",
     "tag": "₹2 Range",
     "price": 2,
     "cataloguePage": 10
   },
   {
-    "id": "jagga-jasoo",
-    "name": "Jagga Jasoo",
+    "id": "jagga-jasoos",
+    "name": "Jagga Jasoos",
+    "category": "₹2 MRP Items",
+    "tag": "₹2 Range",
+    "price": 2,
+    "cataloguePage": 10
+  },
+  {
+    "id": "ketchup-katori-2",
+    "name": "Ketchup Katori",
+    "category": "₹2 MRP Items",
+    "tag": "₹2 Range",
+    "price": 2,
+    "cataloguePage": 10
+  },
+  {
+    "id": "candy-balls",
+    "name": "Candy Balls",
+    "category": "₹2 MRP Items",
+    "tag": "₹2 Range",
+    "price": 2,
+    "cataloguePage": 10
+  },
+  {
+    "id": "gubbare-ki-duniya",
+    "name": "Gubbare Ki Duniya",
     "category": "₹2 MRP Items",
     "tag": "₹2 Range",
     "price": 2,
@@ -310,42 +541,42 @@ export const products: Product[] = [
   },
   {
     "id": "kit-kat",
-    "name": "Kit-Kat",
+    "name": "Kit-Kat Choco Coated Wafer",
     "category": "Wafers",
     "tag": "Wafers",
-    "price": null,
+    "price": 5,
     "cataloguePage": 11
   },
   {
-    "id": "wafer-stick",
-    "name": "Star Gold Wafer",
+    "id": "star-gold",
+    "name": "Star Gold Choco Coated Wafer",
     "category": "Wafers",
     "tag": "Wafers",
-    "price": null,
+    "price": 5,
     "cataloguePage": 11
   },
   {
-    "id": "2-much",
-    "name": "2 Much",
+    "id": "2much",
+    "name": "2much Choco Coated Wafer",
     "category": "Wafers",
     "tag": "Wafers",
-    "price": null,
+    "price": 5,
     "cataloguePage": 11
   },
   {
     "id": "jungle-safari",
-    "name": "Jungle Safari",
+    "name": "Jungle Safari Cream Wafers",
     "category": "Wafers",
     "tag": "Wafers",
-    "price": null,
+    "price": 2,
     "cataloguePage": 12
   },
   {
-    "id": "wafer-chouda",
-    "name": "Wafer Chouda",
+    "id": "wafers-chouda",
+    "name": "Wafers Chouda",
     "category": "Wafers",
     "tag": "Wafers",
-    "price": null,
+    "price": 5,
     "cataloguePage": 12
   },
   {
@@ -353,19 +584,19 @@ export const products: Product[] = [
     "name": "Lambu Wafers",
     "category": "Wafers",
     "tag": "Wafers",
-    "price": null,
+    "price": 5,
     "cataloguePage": 12
   },
   {
-    "id": "awari-gathiya",
-    "name": "Awari Gathiya",
+    "id": "achari-gathiya",
+    "name": "Achari Gathiya",
     "category": "₹10 Premium Namkeens",
     "tag": "₹10 Premium",
     "price": 10,
     "cataloguePage": 13
   },
   {
-    "id": "masti-maza",
+    "id": "masti-maza-10",
     "name": "Masti Maza",
     "category": "₹10 Premium Namkeens",
     "tag": "₹10 Premium",
@@ -379,6 +610,14 @@ export const products: Product[] = [
     "tag": "₹10 Premium",
     "price": 10,
     "cataloguePage": 13
+  },
+  {
+    "id": "masti-maza",
+    "name": "Masti Maza",
+    "category": "₹5 Namkeens",
+    "tag": "₹5 Namkeen",
+    "price": 5,
+    "cataloguePage": 14
   },
   {
     "id": "sab-kuch-mixture",
@@ -405,7 +644,7 @@ export const products: Product[] = [
     "cataloguePage": 14
   },
   {
-    "id": "nargri-sev",
+    "id": "narangi-sev",
     "name": "Narangi Sev",
     "category": "₹5 Namkeens",
     "tag": "₹5 Namkeen",
@@ -469,7 +708,7 @@ export const products: Product[] = [
     "cataloguePage": 15
   },
   {
-    "id": "nayalon-saloni",
+    "id": "nylon-saloni",
     "name": "Nylon Saloni",
     "category": "₹5 Namkeens",
     "tag": "₹5 Namkeen",
@@ -477,7 +716,7 @@ export const products: Product[] = [
     "cataloguePage": 15
   },
   {
-    "id": "bhujia-falsa",
+    "id": "bhajiya-phalli",
     "name": "Bhajiya Phalli",
     "category": "₹5 Namkeens",
     "tag": "₹5 Namkeen",
@@ -541,7 +780,7 @@ export const products: Product[] = [
     "cataloguePage": 16
   },
   {
-    "id": "nayalon-saloni-2",
+    "id": "nylon-saloni-2",
     "name": "Nylon Saloni",
     "category": "₹2 Pocket Packs",
     "tag": "₹2 Pocket",
@@ -549,8 +788,8 @@ export const products: Product[] = [
     "cataloguePage": 16
   },
   {
-    "id": "gathakatori",
-    "name": "Gangakaveri",
+    "id": "gangakaveri",
+    "name": "Gangakaveri Namkeen",
     "category": "500g & 1kg Namkeen",
     "tag": "Large Pack",
     "price": null,
@@ -565,18 +804,66 @@ export const products: Product[] = [
     "cataloguePage": 17
   },
   {
-    "id": "haula-haula",
-    "name": "Haula Haula",
+    "id": "pet-pooja-special-namkeen-2",
+    "name": "Pet Pooja Special Namkeen (Premium)",
+    "category": "500g & 1kg Namkeen",
+    "tag": "Large Pack",
+    "price": null,
+    "cataloguePage": 17
+  },
+  {
+    "id": "balaji-bhel",
+    "name": "Balaji Bhel",
+    "category": "Balaji Premium Range",
+    "tag": "Balaji",
+    "price": null,
+    "cataloguePage": 18
+  },
+  {
+    "id": "balaji-wafers",
+    "name": "Balaji Wafers",
+    "category": "Balaji Premium Range",
+    "tag": "Balaji",
+    "price": null,
+    "cataloguePage": 18
+  },
+  {
+    "id": "balaji-pasta",
+    "name": "Balaji Pasta",
+    "category": "Balaji Premium Range",
+    "tag": "Balaji",
+    "price": null,
+    "cataloguePage": 18
+  },
+  {
+    "id": "balaji-jeera-papad",
+    "name": "Balaji Jeera Papad",
+    "category": "Balaji Premium Range",
+    "tag": "Balaji",
+    "price": 5,
+    "cataloguePage": 18
+  },
+  {
+    "id": "balaji-bhuja",
+    "name": "Balaji Bhuja",
+    "category": "Balaji Premium Range",
+    "tag": "Balaji",
+    "price": 5,
+    "cataloguePage": 18
+  },
+  {
+    "id": "haule-haule",
+    "name": "Haule Haule Potato Chips",
     "category": "Chips",
     "tag": "Chips",
-    "price": null,
+    "price": 5,
     "cataloguePage": 19
   }
 ];
 
 export const categories: string[] = [
   "₹5 Family Pack",
-  "₹5 Toys & Fun",
+  "₹5 Toys & Gifts",
   "Premium ₹5 Snacks",
   "₹2 MRP Items",
   "Wafers",
@@ -584,6 +871,7 @@ export const categories: string[] = [
   "₹5 Namkeens",
   "₹2 Pocket Packs",
   "500g & 1kg Namkeen",
+  "Balaji Premium Range",
   "Chips"
 ];
 
