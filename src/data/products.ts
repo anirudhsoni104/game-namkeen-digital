@@ -188,14 +188,6 @@ export const products: Product[] = [
     "cataloguePage": 4
   },
   {
-    "id": "pet-pooja-tasty-puff-5",
-    "name": "Pet Pooja Tasty Puff (Big Pack)",
-    "category": "₹5 Family Pack",
-    "tag": "Family Pack",
-    "price": 5,
-    "cataloguePage": 4
-  },
-  {
     "id": "babaji-ka-thullu",
     "name": "Babaji Ka Thullu",
     "category": "₹5 Toys & Gifts",
@@ -798,6 +790,14 @@ export const products: Product[] = [
   {
     "id": "pet-pooja-special-namkeen",
     "name": "Pet Pooja Special Namkeen",
+    "category": "500g & 1kg Namkeen",
+    "tag": "Large Pack",
+    "price": null,
+    "cataloguePage": 17
+  },
+  {
+    "id": "pet-pooja-special-namkeen-2",
+    "name": "Pet Pooja Special Namkeen (Premium)",
     "category": "500g & 1kg Namkeen",
     "tag": "Large Pack",
     "price": null,

@@ -22,7 +22,7 @@ export const productImages: Record<string, string> = {
   "patar-patar": "/__l5e/assets-v1/81344f57-9f0e-4279-9a1a-6cd978b7cfd1/patar-patar.png",
   "sev-samosa": "/__l5e/assets-v1/b8f12025-cd38-4aba-9d6f-445d45172be8/sev-samosa.png",
   "indori-kabab": "/__l5e/assets-v1/60f7d992-69a1-49e2-8309-f181b377c7f3/indori-kabab.png",
-  "pet-pooja-tasty-puff-5": "/__l5e/assets-v1/39b3e9f4-f4a9-404f-b094-f032414e70c7/pet-pooja-tasty-puff-5.png",
+  
   "babaji-ka-thullu": "/__l5e/assets-v1/265caaec-6408-434e-b6df-e72e05b45ca0/babaji-ka-thullu.png",
   "ketchup-katori": "/__l5e/assets-v1/b971fe86-5b13-4ce2-a56f-31f60da52856/ketchup-katori.png",
   "makeup-jewellery-box": "/__l5e/assets-v1/4857ec29-9ae3-4bd6-9e98-2bdfe582feae/makeup-jewellery-box.png",
