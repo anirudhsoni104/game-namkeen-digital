@@ -99,6 +99,7 @@ export const productImages: Record<string, string> = {
   "nylon-saloni-2": "/__l5e/assets-v1/786fd9e2-428b-4902-90d1-ae44c158ebe7/nylon-saloni-2.png",
   "gangakaveri": "/__l5e/assets-v1/4422c3e1-74ad-41ae-b2c4-672d0104bad0/gangakaveri.png",
   "pet-pooja-special-namkeen": "/__l5e/assets-v1/03766c96-e64a-4799-b713-b461f3e318e4/pet-pooja-special-namkeen.png",
+  "pet-pooja-special-namkeen-2": "/__l5e/assets-v1/63c0e206-3f44-4297-b5f3-1146afa72432/pet-pooja-special-namkeen-2.png",
   "balaji-bhel": "/__l5e/assets-v1/ef8187b0-23dc-430d-9530-2d030474a90a/balaji-bhel.png",
   "balaji-wafers": "/__l5e/assets-v1/ae3e5d79-cfb8-4b79-ac7d-0f35d0a45af3/balaji-wafers.png",
   "balaji-pasta": "/__l5e/assets-v1/2435cb9b-a8c4-45e7-bf01-291fd7c269e3/balaji-pasta.png",
