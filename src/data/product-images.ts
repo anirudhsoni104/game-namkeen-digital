@@ -22,7 +22,7 @@ export const productImages: Record<string, string> = {
   "patar-patar": "/__l5e/assets-v1/81344f57-9f0e-4279-9a1a-6cd978b7cfd1/patar-patar.png",
   "sev-samosa": "/__l5e/assets-v1/b8f12025-cd38-4aba-9d6f-445d45172be8/sev-samosa.png",
   "indori-kabab": "/__l5e/assets-v1/60f7d992-69a1-49e2-8309-f181b377c7f3/indori-kabab.png",
-  "pet-pooja-tasty-puff-5": "/__l5e/assets-v1/39b3e9f4-f4a9-404f-b094-f032414e70c7/pet-pooja-tasty-puff-5.png",
+  
   "babaji-ka-thullu": "/__l5e/assets-v1/265caaec-6408-434e-b6df-e72e05b45ca0/babaji-ka-thullu.png",
   "ketchup-katori": "/__l5e/assets-v1/b971fe86-5b13-4ce2-a56f-31f60da52856/ketchup-katori.png",
   "makeup-jewellery-box": "/__l5e/assets-v1/4857ec29-9ae3-4bd6-9e98-2bdfe582feae/makeup-jewellery-box.png",
@@ -99,6 +99,7 @@ export const productImages: Record<string, string> = {
   "nylon-saloni-2": "/__l5e/assets-v1/786fd9e2-428b-4902-90d1-ae44c158ebe7/nylon-saloni-2.png",
   "gangakaveri": "/__l5e/assets-v1/4422c3e1-74ad-41ae-b2c4-672d0104bad0/gangakaveri.png",
   "pet-pooja-special-namkeen": "/__l5e/assets-v1/03766c96-e64a-4799-b713-b461f3e318e4/pet-pooja-special-namkeen.png",
+  "pet-pooja-special-namkeen-2": "/__l5e/assets-v1/63c0e206-3f44-4297-b5f3-1146afa72432/pet-pooja-special-namkeen-2.png",
   "balaji-bhel": "/__l5e/assets-v1/ef8187b0-23dc-430d-9530-2d030474a90a/balaji-bhel.png",
   "balaji-wafers": "/__l5e/assets-v1/ae3e5d79-cfb8-4b79-ac7d-0f35d0a45af3/balaji-wafers.png",
   "balaji-pasta": "/__l5e/assets-v1/2435cb9b-a8c4-45e7-bf01-291fd7c269e3/balaji-pasta.png",
