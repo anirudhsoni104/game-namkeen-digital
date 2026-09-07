@@ -269,7 +269,7 @@ export const products: Product[] = [
   },
   {
     "id": "biskute-biscuit",
-    "name": "Biskute Biscuit",
+    "name": "Biskut Viskut",
     "category": "₹5 Toys & Gifts",
     "tag": "Fun Pack",
     "price": 5,
@@ -413,7 +413,7 @@ export const products: Product[] = [
   },
   {
     "id": "kefuram",
-    "name": "Kefuram",
+    "name": "Fekuram",
     "category": "₹5 Toys & Gifts",
     "tag": "Fun Pack",
     "price": 5,
@@ -541,7 +541,7 @@ export const products: Product[] = [
   },
   {
     "id": "kit-kat",
-    "name": "Kit-Kat Choco Coated Wafer",
+    "name": "Kat Kat Choco Coated Wafer",
     "category": "Wafers",
     "tag": "Wafers",
     "price": 5,
@@ -798,14 +798,6 @@ export const products: Product[] = [
   {
     "id": "pet-pooja-special-namkeen",
     "name": "Pet Pooja Special Namkeen",
-    "category": "500g & 1kg Namkeen",
-    "tag": "Large Pack",
-    "price": null,
-    "cataloguePage": 17
-  },
-  {
-    "id": "pet-pooja-special-namkeen-2",
-    "name": "Pet Pooja Special Namkeen (Premium)",
     "category": "500g & 1kg Namkeen",
     "tag": "Large Pack",
     "price": null,
